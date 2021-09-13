@@ -6,8 +6,8 @@ var passwordLength = function PwordLength () {window.prompt("Choose Length of Pa
                         passwordLength();
                         if (passwordLength >=8 && passwordLength < 128) {
                           var LengthConfirm = window.confirm("You chose password lenth of " + passwordLength +".  Do you confirm that is correct?");
-                        if (LenthConfirm) {window.alert("You have chosen" + passwordLength + "characters");}
-                          else if {passwordLength()};
+                        if (LengthConfirm) {window.alert("You have chosen" + passwordLength + "characters");}
+                          else {passwordLength()};
 
 
 var includeLowerCase = function LCase() {window.prompt("Include lowercase letters in password: Yes or No?");}
@@ -15,7 +15,7 @@ var includeLowerCase = function LCase() {window.prompt("Include lowercase letter
                         if (includeLowerCase === "Yes" || "YES" || "yes") {
                           var LCaseConfirm = window.confirm("Please confirm you want to include lowercase letters?");
                         if (LCaseConfirm) {window.alert("You have chosen to include lowercase letters");}
-                          else if {includeLowerCase()};
+                          else {includeLowerCase()};
 
 
 var includeUpperCase = function UCase() {window.prompt("Include uppercase letters in passowrd: Yes or No?");}
@@ -23,7 +23,7 @@ var includeUpperCase = function UCase() {window.prompt("Include uppercase letter
                         if (includeUpperCase === "Yes" || "YES" || "yes") {
                           var UCaseConfirm = window.confirm("Please confirm you want to include uppercase letters?");
                         if (UCaseConfirm) {window.alert("You have chosen to include uppercase letters");}
-                          else if {includeUpperCase()};
+                          else {includeUpperCase()};
 
 
 var includeNumbers = function NumberInc() {window.prompt("Include numbers in your password: Yes or No?");}
@@ -31,7 +31,7 @@ var includeNumbers = function NumberInc() {window.prompt("Include numbers in you
                           if (includeNumbers === "Yes" || "YES" || "yes") {
                             var NumberConfirm = window.confirm("Please confirm you want to include numbers?");
                           if (NumberConfirm) {window.alert("You have chosen to include numbers");}
-                            else if {includeNumbers()};
+                            else {includeNumbers()};
 
 
 var includeSpecials = function SpecialsInc() {window.prompt("Include special characters in passowrd: Yes or No?");}
@@ -39,7 +39,7 @@ var includeSpecials = function SpecialsInc() {window.prompt("Include special cha
                           if (includeSpecials === "Yes" || "YES" || "yes") {
                             var SpecialsConfirm = window.confirm("Please confirm you want to special characters");
                           if (SpecialsConfirm) {window.alert("You have chosen to include special characters");}
-                            else if {includeSpecials()};
+                            else {includeSpecials()};
 
 
 
@@ -51,12 +51,19 @@ const Numbers="0123456789";
 const Specials="!@#$%^&*_-+=";
 
 
+
+
+
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numberItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var Specials = ['!','@', '#', '$', '%', '&', "_", '*', '?'];
+var PrimaryArray = [if(LCaseConfirm)[lowerCase], if(CaseConfirm) [upperCase], if(NumberConfirm) [numberItems], if(SpecialsConfirm) [Specials]];
 
 
+for (var i = 0; i < passwordLength; i++) {
+
+}
 
 
 
